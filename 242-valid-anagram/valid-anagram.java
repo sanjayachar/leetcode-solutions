@@ -6,13 +6,9 @@ class Solution {
         char[]ch2=t.toCharArray();
         Arrays.sort(ch1);
         Arrays.sort(ch2);
-        String s1 = new String(ch1);
-        String s2 = new String(ch2);
-        for(int i=0; i<t.length(); i++) {
-            if(s1.charAt(i) != s2.charAt(i)){
-                return false;
-            }
+        if(Arrays.equals(ch1,ch2)){
+            return true;
         }
-        return true;
+        return false;
     }
 }
